@@ -1,0 +1,78 @@
+body{
+  display:flex;
+  justify-content: center;
+  margin:5%;
+}
+
+.main{
+  display:border-box;
+  align-content: center;
+  width: 400px;
+  min-height:600px;
+  background-image: url("image.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 7px 15px black;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: 600;
+    
+
+}
+  
+  input, button {
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 6px;
+    text-align: center;
+  }
+  
+  
+  
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+button {
+  border: 3px solid #229091;
+  padding: 10px 10px;
+  width:50%;
+  height:40px;
+  font-size: large;
+  --c:  #229091;
+  
+  box-shadow: 0 0 0 .1em inset var(--c); 
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .4s, background-position 0s .4s;
+}
+button:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+}
+button:active {
+  box-shadow: 0 0 9e9q inset #0009; 
+  background-color: var(--c);
+  color: #fff;
+}
+
